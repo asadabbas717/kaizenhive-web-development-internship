@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script>
+        let jsonData = '{"name":"Ali","age":20}';
+
+        let user = JSON.parse(jsonData);
+
+        document.getElementById("result").innerHTML =
+            "Name: " + user.name + "<br>" +
+            "Age: " + user.age;
+    </script>
+
+</body>
+</html>

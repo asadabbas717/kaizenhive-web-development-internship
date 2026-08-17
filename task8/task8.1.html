@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape HTML</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script>
+        function escapeHTML(text) {
+            return text
+                .replaceAll("<", "&lt;")
+                .replaceAll(">", "&gt;");
+        }
+
+        let userInput = "<b>Hello</b>";
+        let safeText = escapeHTML(userInput);
+
+        document.getElementById("result").textContent = safeText;
+    </script>
+
+</body>
+</html>

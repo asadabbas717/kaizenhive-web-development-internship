@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Validation</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script>
+        function checkURL(url) {
+            if (url.startsWith("http://") || url.startsWith("https://")) {
+                return "Safe URL";
+            } else {
+                return "Invalid URL";
+            }
+        }
+
+        let url = "javascript:alert(1)";
+
+        document.getElementById("result").textContent = checkURL(url);
+    </script>
+
+</body>
+</html>

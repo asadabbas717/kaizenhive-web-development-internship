@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+
+    <ul id="courseList"></ul>
+
+    <script>
+        let jsonData = '["HTML", "CSS", "JavaScript"]';
+
+        let courses = JSON.parse(jsonData);
+
+        for (let i = 0; i < courses.length; i++) {
+            let item = document.createElement("li");
+            item.innerText = courses[i];
+
+            document.getElementById("courseList").appendChild(item);
+        }
+    </script>
+
+</body>
+</html>
