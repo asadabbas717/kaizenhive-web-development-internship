@@ -23,13 +23,13 @@ The internship work is organized into separate folders:
 ```text
 Task1/
 Task2/
-Task3/
-Task4/
-Task5/
-Task6/
-Task7/
-Task8/
-Task9/
+task3/
+task4/
+task5/
+task6/
+task7/
+task8/
+task9/
 ```
 
 Each folder contains the files required for that particular internship task.
